@@ -21,6 +21,9 @@ module.exports = {
         'words-yellow-40': '#FFFBC7',
         'words-shade': '#00000026',
       },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [],
