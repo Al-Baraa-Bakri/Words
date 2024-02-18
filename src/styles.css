@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 body {
-    cursor: url('assets/cursors/cursor-3.png'), url('assets/cursors/cursor.png'), auto;
+    cursor: url('assets/cursors/cursor.png'), url('assets/cursors/cursor-2.png'), auto;
     overflow-x: hidden;
   }

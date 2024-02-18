@@ -19,8 +19,12 @@ export class AppComponent {
 
   handleAddCursorAnimation(e: MouseEvent): void {
     const el = this.document.createElement('span');
+    const cursorIconPadding = {
+      x: 18, 
+      y: 20
+    }; 
     el.classList.add(...["absolute", "h-12", "w-12", "rounded-full", "bg-words-primary", "animate-cursor-animation"])
-    el.setAttribute('style' , `top:${e.y}px; left:${e.x}px`)
+    el.setAttribute('style' , `top:${e.y - cursorIconPadding.y}px; left:${e.x - cursorIconPadding.x}px`)
     this.document.getElementById('main')?.appendChild(el);
     const animationTime = 1000;
     setTimeout(() => {
