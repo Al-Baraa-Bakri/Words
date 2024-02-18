@@ -31,6 +31,21 @@ module.exports = {
         montserrat: ['Montserrat', 'sans-serif'],
         niconne: ["Niconne", 'cursive']
       },
+      keyframes: {
+        'cursor-animation': {
+          from: {
+            transform: 'scale(0)', 
+            opacity: '1'
+          }, 
+          to: {
+            transform: 'scale(2)', 
+            opacity: '0'
+          }
+        }
+      }, 
+      animation: {
+        'cursor-animation': 'cursor-animation 1s ease 1',
+      }
     },
   },
   plugins: [],
