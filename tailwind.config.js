@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       colors: {
         'words-primary': '#F236EA',
+        'words-primary-darker': '#8E4189',
+        'words-secondary': '#FFF',
         'words-accent': '#6ACFF6',
+        'words-dark': '#151515', 
         'words-info': '#DCF8FF',
         'words-base': '#FFFFFF',
         'words-base-focus': '#EFFBFF',
@@ -21,9 +24,28 @@ module.exports = {
         'words-yellow-40': '#FFFBC7',
         'words-shade': '#00000026',
       },
+      width: {
+        'main-container': '90%', 
+      }, 
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
+        niconne: ["Niconne", 'cursive']
       },
+      keyframes: {
+        'cursor-animation': {
+          from: {
+            transform: 'scale(0)', 
+            opacity: '1'
+          }, 
+          to: {
+            transform: 'scale(2)', 
+            opacity: '0'
+          }
+        }
+      }, 
+      animation: {
+        'cursor-animation': 'cursor-animation 1s ease 1',
+      }
     },
   },
   plugins: [],
