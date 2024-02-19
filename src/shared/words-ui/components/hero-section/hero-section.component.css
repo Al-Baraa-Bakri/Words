@@ -1,0 +1,5 @@
+:host {
+    display: block;
+    min-height: inherit;
+    max-height: 1000px;
+}

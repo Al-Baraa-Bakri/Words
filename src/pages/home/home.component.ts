@@ -4,6 +4,7 @@ import { HeroSectionComponent } from 'src/shared/words-ui/components/hero-sectio
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css'],
   standalone: true , 
   imports: [HeroSectionComponent]
 })
