@@ -23,7 +23,7 @@ export class AppComponent {
       x: 18, 
       y: 20
     }; 
-    el.classList.add(...["absolute", "h-12", "w-12", "rounded-full", "bg-words-primary", "animate-cursor-animation"])
+    el.classList.add(...["absolute", "h-12", "w-12", "rounded-full", "bg-words-primary", "animate-cursor-animation" , "pointer-events-none"])
     el.setAttribute('style' , `top:${e.y - cursorIconPadding.y}px; left:${e.x - cursorIconPadding.x}px`)
     this.document.getElementById('main')?.appendChild(el);
     const animationTime = 1000;

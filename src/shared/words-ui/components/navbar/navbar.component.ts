@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   standalone: true
 })
 export class NavbarComponent {
-
+  isNavbarOpen$: BehaviorSubject<boolean> = new BehaviorSubject(false);
+  
+  toggleMenu(): void {
+    this.isNavbarOpen$.next(!this.isNavbarOpen$.getValue())
+  }
 }

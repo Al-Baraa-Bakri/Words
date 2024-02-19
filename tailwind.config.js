@@ -27,6 +27,9 @@ module.exports = {
       width: {
         'main-container': '90%', 
       }, 
+      maxWidth: {
+        'main-container': '1440px'
+      },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
         niconne: ["Niconne", 'cursive']
