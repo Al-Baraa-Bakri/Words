@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'words-primary': '#F236EA',
+        'words-primary': 'var(--primary-color)',
         'words-primary-darker': '#8E4189',
         'words-secondary': '#FFF',
         'words-accent': '#6ACFF6',
@@ -48,7 +48,7 @@ module.exports = {
       }, 
       animation: {
         'cursor-animation': 'cursor-animation 1s ease 1',
-      }
+      },
     },
   },
   plugins: [],
