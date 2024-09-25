@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #F236EA
+}
+
 body {
     cursor: url('assets/cursors/cursor.png'), url('assets/cursors/cursor-2.png'), auto;
     overflow-x: hidden;
-  }
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: white;
+}
