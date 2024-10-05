@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_page_sections_plural",
+  "info": {
+    "singularName": "home-page-sections",
+    "pluralName": "home-page-sections-plural",
+    "displayName": "HomePageSections",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HeaderSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header-section.header-section"
+    },
+    "ImageGallery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "image-gallery.image-gallery"
+    },
+    "Faqs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fa-qs-section.fa-qs-section"
+    }
+  }
+}

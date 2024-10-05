@@ -1,5 +1,5 @@
 import { ComponentRef, Injectable, ViewContainerRef } from '@angular/core';
-import { CursorAnimationComponent } from '../words-ui/components/cursor-animation/cursor-animation.component';
+import { CursorAnimationComponent } from '../../words-ui/components/cursor-animation/cursor-animation.component';
 
 @Injectable({
   providedIn: 'root'
