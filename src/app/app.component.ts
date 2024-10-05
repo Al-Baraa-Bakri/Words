@@ -11,13 +11,13 @@ export class AppComponent {
   @ViewChild('cursorAnimationContainer' , {read: ViewContainerRef}) viewContainerRef!: ViewContainerRef
 
   constructor(
-    private cursorAnimation: CursorAnimationService,
+    private cursorAnimationService: CursorAnimationService,
     @Inject(DOCUMENT) private document: Document
   ){}
 
   @HostListener('click', ['$event'])
   onClick(e: MouseEvent) {
-    this.cursorAnimation.craeteCursorAnimation(this.viewContainerRef , e);
+    this.cursorAnimationService.createCursorAnimation(this.viewContainerRef , e);
   }
 
   createCursorAnimantion() {

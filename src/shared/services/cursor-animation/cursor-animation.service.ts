@@ -8,7 +8,7 @@ export class CursorAnimationService {
 
   constructor() { }
 
-  craeteCursorAnimation(viewContainerRef: ViewContainerRef , event: MouseEvent){ 
+  createCursorAnimation(viewContainerRef: ViewContainerRef , event: MouseEvent){ 
     console.log("viewContainerRef : " , viewContainerRef);
     const componentRef = 
     viewContainerRef?.createComponent(CursorAnimationComponent);
