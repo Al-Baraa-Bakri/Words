@@ -1,7 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, ComponentRef, HostListener, Inject, ViewChild, ViewContainerRef } from '@angular/core';
-import { CursorAnimationService } from 'src/shared/services/cursor-animation.service';
-import { CursorAnimationComponent } from 'src/shared/words-ui/components/cursor-animation/cursor-animation.component';
+import { CursorAnimationService } from 'src/shared/services/cursor-animation/cursor-animation.service';
 
 @Component({
   selector: 'app-root',
@@ -19,5 +18,9 @@ export class AppComponent {
   @HostListener('click', ['$event'])
   onClick(e: MouseEvent) {
     this.cursorAnimation.craeteCursorAnimation(this.viewContainerRef , e);
+  }
+
+  createCursorAnimantion() {
+    console.log("Done!");
   }
 }
